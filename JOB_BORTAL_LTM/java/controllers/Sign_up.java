@@ -6,8 +6,7 @@ import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 
-import model.bean.Account;
-import model.dao.LoginDAO;
+import model.bo.LoginBO;
 
 import javax.servlet.http.*;
 
@@ -32,7 +31,7 @@ public class Sign_up extends HttpServlet
 		if (username == null || password == null) {
 			response.sendRedirect("sign_up.jsp");
 		} else {
-			LoginDAO.getInstance().signUp(name, email, username, password, "candidate");
+			LoginBO.getInstance().signUp(name, email, username, password, "candidate");
 			response.sendRedirect("index.jsp");
 		}
 	}
