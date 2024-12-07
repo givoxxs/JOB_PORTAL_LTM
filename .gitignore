@@ -1,0 +1,41 @@
+# Bytecode và các tệp biên dịch
+*.class
+*.jar
+*.war
+
+# Thư mục biên dịch
+/build/
+*/build/
+
+# Thư mục của IDE
+/.idea/
+/*.iml
+/.classpath
+/.project
+/.settings/
+
+# Thư viện phụ thuộc (nếu sử dụng Maven hoặc Gradle, thư viện sẽ tự tải lại)
+lib/
+*.log
+
+# Các tệp tạm
+*.tmp
+*.bak
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
+
+# Thông tin môi trường cục bộ
+/.env
+*.properties
+
+# Tệp của hệ điều hành
+desktop.ini
+
+# Thư mục tạm của máy chủ
+/tmp/
+logs/
+
+# Nếu sử dụng Maven
+/target/
