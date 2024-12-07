@@ -4,19 +4,30 @@
 *.war
 
 # Thư mục biên dịch
-/build/
+/target/
 */build/
 
-# Thư mục của IDE
+# Thư mục và tệp của IDE
 /.idea/
 /*.iml
-/.classpath
-/.project
+**/.settings/
+/.metadata/
+/.metadata/*
+**/.classpath
+**/.project
 /.settings/
 
-# Thư viện phụ thuộc (nếu sử dụng Maven hoặc Gradle, thư viện sẽ tự tải lại)
+
+# Maven, Gradle
+/target/
+/*.log
+/.mvn/
+/.mvn/
+/build/
+
+# Thư viện phụ thuộc
 lib/
-*.log
+dependency-reduced-pom.xml
 
 # Các tệp tạm
 *.tmp
@@ -37,5 +48,5 @@ desktop.ini
 /tmp/
 logs/
 
-# Nếu sử dụng Maven
-/target/
+# Web resources
+**/m2e-wtp/web-resources/
